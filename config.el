@@ -45,6 +45,13 @@
   (global-set-key [remap projectile-find-file] 'fzf-projectile)
   (global-set-key (kbd "M-p") 'fzf-projectile)
   (define-key! (kbd "M-p") 'fzf-projectile))
+(after! lsp-mode
+  (lsp!))
+(after! lsp-java
+  :config
+  (require 'lsp-java)
+  (add-hook 'java-mode-hook #'lsp)
+  )
 ;;(add-to-list 'projectile-globally-ignored-directories "*node_modules")
 ;;(add-to-list 'projectile-globally-ignored-directories "*vendor")
 ;;(add-to-list 'projectile-globally-ignored-directories "*tmp")
@@ -76,6 +83,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (company-tabnine)))
  '(safe-local-variable-values
    (quote
     ((projectile-globally-ignored-directories . "*node_modules*")

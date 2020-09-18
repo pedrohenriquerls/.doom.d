@@ -12,8 +12,7 @@
 (package! fzf)
 (package! company-tabnine)
 ;;(package! company)
-(use-package company-tabnine :ensure t)
-(add-to-list 'company-backends #'company-tabnine)
+(package! lsp-java)
 
 ;;(after! projectile
 ;;  (nconc projectile-globally-ignored-directories
