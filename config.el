@@ -50,7 +50,7 @@
 (after! lsp-java
   :config
   (require 'lsp-java)
-  (add-hook 'java-mode-hook #'lsp)
+  (add-hook 'java-mode-hook #'lsp!)
   )
 ;;(add-to-list 'projectile-globally-ignored-directories "*node_modules")
 ;;(add-to-list 'projectile-globally-ignored-directories "*vendor")

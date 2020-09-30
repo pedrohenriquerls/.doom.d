@@ -13,6 +13,7 @@
 (package! company-tabnine)
 ;;(package! company)
 (package! lsp-java)
+(package! lsp-dart)
 
 ;;(after! projectile
 ;;  (nconc projectile-globally-ignored-directories
